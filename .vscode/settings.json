@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "apue.h": "c",
+    "dirent.h": "c"
+  },
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/yusur/unix_programming",
+      "binaryPath": "/yusur/unix_programming/a_ls",
+      "binaryArgs": []
+    }
+  ]
+}

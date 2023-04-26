@@ -1,0 +1,13 @@
+# Common make definitions, customized for each platform
+
+# Definitions required in all program directories to compile and link
+# C programs using gcc.
+
+CC=clang
+LDFLAGS=
+LDDIR=-L$(ROOT)/apue.3e/lib # Link directory
+LDLIBS=$(LDDIR) -lapue $(EXTRALIBS) # Link libs
+CFLAGS=-I$(ROOT)/apue.3e/include -Wall -ggdb -DLINUX -D_GNU_SOURCE $(EXTRA)
+
+# Common temp files to delete from each directory.
+TEMPFILES=*.o *.out
